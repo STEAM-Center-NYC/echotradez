@@ -78,4 +78,8 @@ body{
 .form button{
 
   margin-top: 20px;
+} 
+
+body{
+  background-image: url('images/background.png');
 }
