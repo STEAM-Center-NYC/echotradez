@@ -12,6 +12,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link href="bootstrap.css" rel="stylesheet">
+  <style>
+.dark-mode {
+  background-color: black;
+}
+.dark-mode .border-secondary{
+  background-color: black;
+  color: #e000f3;
+}
+
+.dark-mode .border-primary{
+  background-color: black;
+  color: #00e0ff;
+}
+  </style>
 </head>
 
 <body>
@@ -46,6 +60,7 @@
             <a class="nav-link text-white" href="Contact_Page.html"> Contact</a>
           </li>
         </ul>
+            <a class="text-white" onclick="myFunction()"> Toggle dark mode</a>
       </div>
       <a class="btn btn-outline-primary" aria-current="page" href="sign-up.html">Sign Up</a>
       <div>
@@ -55,14 +70,14 @@
     </div>
   </nav>
   <br>
-  <h1 class="text-center">Shopping</h1>
+  <h1 class="text-center text-black">Shopping</h1>
   <br>
 
-  <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 ">
+  <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4">
     <div class="py-3 px-4">
-     <div class="card border-primary">
+     <div class="card border-primary h-100">
       <br><br>
-      <p class="h4  text-center">INIU Portable Charger</p><br>
+      <p class="h4  text-center ">INIU Portable Charger</p><br>
       <img src="images/portable_charger.png" class="card-img-top"
         alt="A image of a portable charger with a pawprint that glows blue in the top corner">
       <div class="card-body">
@@ -76,9 +91,9 @@
       </div>
     </div>
     <div class="py-3 px-4">
-     <div class="card border-secondary ">
+     <div class="card border-secondary h-100">
       <br><br>
-      <p class="h4  text-center">Amazon Fire TV Stick</p><br>
+      <p class="h4  text-center ">Amazon Fire TV Stick</p><br>
       <img src="images/Firestick.png" class="card-img-top" alt="An amazon firestick for streaming">
       <div class="card-body">
         <p class="card-text text-center">HD, sharp picture quality, fast streaming, free & live TV, Alexa Voice Remote
@@ -90,9 +105,9 @@
        </div>
     </div>
     <div class="py-3 px-4">
-     <div class="card border-primary ">
+     <div class="card border-primary h-100">
       <br><br>
-      <p class="h4  text-center">Crocs</p><br>
+      <p class="h4 he text-center">Crocs</p><br>
       <img src="images/Crocs.png" class="card-img-top" alt="Black Crocs">
       <br><br><br>
       <div class="card-body">
@@ -103,7 +118,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-     <div class="card border-secondary">
+     <div class="card border-secondary h-100">
       <br><br>
       <p class="h4  text-center">FitBeast</p><br>
 
@@ -118,7 +133,7 @@
       </div>
     </div>
     <div class="py-3 px-4">
-     <div class="card border-primary">
+     <div class="card border-primary h-100">
       <br><br>
       <p class="h4  text-center">Play-Doh</p><br>
       <img src="images/playdoh.png" class="card-img-top" alt="an image of a multicolored pyramid of playdoh containers">
@@ -132,7 +147,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-     <div class="card border-secondary">
+     <div class="card border-secondary h-100">
       <br><br>
       <p class="h4  text-center">Sparkling Ice</p><br>
       <img src="images/Sparkling_ice.png" class="card-img-top" alt="Sparkling ice Beverage black rasberry flavor">
@@ -146,7 +161,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-     <div class="card border-primary">
+     <div class="card border-primary h-100">
       <br><br>
       <p class="h4  text-center">BACKBONE</p>
       <img src="images/Backbone.png" class="card-img-top" alt="The brand new playstation handheld console the BACKBONE">
@@ -160,7 +175,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-      <div class="card border-secondary">
+      <div class="card border-secondary h-100">
       <br><br>
       <p class="h4  text-center">JBL Charge 4</p><br>
       <img src="images/Jbl_charge4.png" class="card-img-top" alt="The JBL Charge 4 speakers in a pink color">
@@ -173,7 +188,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-     <div class="card border-primary">
+     <div class="card border-primary h-100">
       <br><br>
       <p class="h4  text-center">Wireless Charger iPhone Charging Station</p><br>
       <img src="images/Multicharging_tool.png" class="card-img-top"
@@ -188,7 +203,7 @@
        </div>
       </div>
       <div class="py-3 px-4">
-      <div class="card border-secondary">
+      <div class="card border-secondary h-100">
       <br><br>
       <p class="h4  text-center">Blue Lock Manga Set</p><br>
       <img src="images/Blue_lock_book_set.png" class="card-img-top"
@@ -291,6 +306,13 @@
     })
     wow.init();
   </script>
+  <script>
+function myFunction() {
+   var element = document.body;
+ 
+   element.classList.toggle("dark-mode");
+}
+    </script>
 </body>
 
 </html>
