@@ -1,241 +1,317 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Echo Tradez Shopping</title>
-    <link href="bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Echo Tradez Shopping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="bootstrap.css" rel="stylesheet">
+  <style>
+.dark-mode {
+  background-color: black;
+}
+.dark-mode .border-secondary{
+  background-color: black;
+  color: #e000f3;
+}
+
+.dark-mode .border-primary{
+  background-color: black;
+  color: #00e0ff;
+}
+  </style>
+</head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid justify-content-end ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/Logo Transparent.png" alt="Logo" width="50" class="d-inline-block align-text-top">
-          </a>
-          <div class="flex-grow-1"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link text-white "  href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="shopping.html">Shopping</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="tradingpage.html">Trading</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="faqpage.html"> F.A.Q. </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="Team page.html"> Team Members </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="echosubscription.html"> Subscription</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="Contact_Page.html"> Contact</a>
-              </li>
-            </ul>
-          </div>
-          <a class="btn btn-outline-primary" aria-current="page" href="sign-up.html">Sign Up</a>
-          <div>
-            <a class="btn " aria-current="page" href="Payment_Info.html"><img src="images/cart-148964_1280.png" alt="Logo"
-                width="30" class="d-inline-block align-text-top"></a>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid justify-content-end ">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo Transparent.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+      </a>
+      <div class="flex-grow-1"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link text-white " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="shopping.html">Shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="faqpage.html"> F.A.Q. </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Team page.html"> Team Members </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="echosubscription.html"> Subscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Contact_Page.html"> Contact</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-outline-primary" aria-current="page" href="sign-up.html">Sign Up</a>
+      <div>
+        <a class="btn " aria-current="page" href="Payment_Info.html"><img src="images/cart-148964_1280.png" alt="Logo"
+            width="30" class="d-inline-block align-text-top"></a>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <h1 class="text-center text-black">Shopping</h1>
+  <br>
+
+  <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4">
+    <div class="py-3 px-4">
+     <div class="card border-primary h-100">
       <br><br>
-      <h1 class="text-center display-1 text-primary"><span class="text-primary">S</span><span class="text-secondary">h</span><span class="text-primary">o</span><span class="text-secondary">p</span><span class="text-primary">p</span><span class="text-secondary">i</span><span class="text-primary">n</span><span class="text-secondary">g</span></h1>
+      <p class="h4  text-center ">INIU Portable Charger</p><br>
+      <img src="images/portable_charger.png" class="card-img-top"
+        alt="A image of a portable charger with a pawprint that glows blue in the top corner">
+      <div class="card-body">
+
+        <p class="card-text text-center">Slimmest 10000mAh 5V/3A Power Bank, USB C in&Out High-Speed Charging Battery
+          Pack, External
+          Phone Powerbank Compatible with iPhone 15 14 13 12 X Samsung S22 S21 Google iPad etc. <br>
+        <h5 class="text-center">$17.99</h5>
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="py-3 px-4">
+     <div class="card border-secondary h-100">
       <br><br>
-      <div class="row">
-            <div class="card border-primary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <img src="images/portable_charger.png" class="card-img-top" alt="A image of a portable charger with a pawprint that glows blue in the top corner">
-                <div class="card-body">
-                    <p class="card-text text-center">INIU Portable Charger, Slimmest 10000mAh 5V/3A Power Bank, USB C 
-                      in&Out High-Speed Charging Battery Pack, External Phone Powerbank Compatible with iPhone 15 14 13 12 X Samsung S22 S21 
-                      Google iPad etc. <br><h5 class="text-center">$17.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-secondary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <img src="images/Firestick.png" class="card-img-top" alt="An amazon firestick for streaming">
-                <div class="card-body">
-                    <p class="card-text text-center">Amazon Fire TV Stick, HD, sharp picture quality, fast streaming, free &amp; live TV, 
-                      Alexa Voice Remote with TV controls.
-                        <br><h5 class="text-center">$39.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-primary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br><br>
-                <img src="images/Crocs.png" class="card-img-top" alt="Black Crocs">
-                <br><br><br>
-                <div class="card-body">
-                    <p class="card-text text-center">Crocs Unisex-Adult Classic Clogs (Size 8 Mens).<h5 class="text-center">$42.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-secondary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br><br>
-                <img src="images/fiberbeat.png" class="card-img-top" alt="image of Grip Strengthener kit of 5">
-                <br><br><br>
-                <div class="card-body">
-                    <p class="card-text text-center">FitBeast Grip Strengthener Forearm Strengthener Hand Grips Strengthener Kit - 5 Pack 
-                      Adjustable Resistance.
-                        <h5 class="text-center">$25.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-primary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br>
-                <img src="images/playdoh.png" class="card-img-top" alt="an image of a multicolored pyramid of playdoh containers">
-                <br><br>
-                <div class="card-body">
-                    <p class="card-text text-center">Play-Doh Modeling Compound 10-Pack Case of Colors, Non-Toxic, Assorted, 2 oz. Cans, 
-                      Multicolor, Ages 2 and Up.
-                        <h5 class="text-center">$7.99</h5></p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="card border-secondary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br>
-                <img src="images/Sparkling_ice.png" class="card-img-top" alt="Sparkling ice Beverage black rasberry flavor">
-                <div class="card-body">
-                    <p class="card-text text-center">Sparkling Ice, Black Raspberry Sparkling Water, Zero Sugar Flavored Water, 
-                      with Vitamins and Antioxidants, Low Calorie Beverage, 
-                        17 fl oz Bottles (Pack of 12).<h5 class="text-center">$10.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-primary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <img src="images/Backbone.png" class="card-img-top" alt="The brand new playstation handheld console the BACKBONE">
-                <div class="card-body">
-                    <p class="card-text text-center">BACKBONE One Mobile Gaming Controller for Android and iPhone 15 Series (USB-C) - PlayStation Edition -
-                         2nd Gen - Turn Your Phone into a Gaming Console- Play PlayStation, Xbox, Call of Duty &amp; More.<h5 class="text-center">$99.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-secondary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br><br><br><br>
-                <img src="images/Jbl_charge4.png" class="card-img-top" alt="The JBL Charge 4 speakers in a pink color">
-                <br><br><br><br>
-                <div class="card-body">
-                    <p class="card-text text-center">JBL Charge 4 - Waterproof Portable Bluetooth Speaker - Pink.<h5 class="text-center">$149.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-primary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br>
-                <img src="images/Multicharging_tool.png" class="card-img-top" alt="A sleek black multicharging tool to chage all apple devices simultaneously">
-                <br>
-                <div class="card-body">
-                    <p class="card-text text-center">Wireless Charger iPhone Charging Station: 3 in 1 Charger Stand Multiple Devices for Apple - iPhone 15 14 Pro 
-                        Max 13 12 11 - Watch 9 8 7 6 5 4 3 2 Se - Airpods 3 2 Pro.<h5 class="text-center">$29.99</h5></p>
-                </div>
-            </div>
-            <div class="card border-secondary mb-3 mx-4 col-md-2" style="width: 18rem;">
-                <br><br><br>
-                <img src="images/Blue_lock_book_set.png" class="card-img-top" alt="A book set of the first 5 books in the blue lock manga series paperback">
-                <br><br>
-                <div class="card-body">
-                    <p class="card-text text-center">Blue Lock Manga Set Volumes 1-5 Paperback.<h5 class="text-center">$69.99</h5></p>
-                </div>
-            </div>
-        </div>
-      <footer class="text-center text-lg-start bg-body-tertiary text-muted">  
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">       
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>          
-          <div>
-            <a target="_blank" href="https://www.linkedin.com/in/arion-john-0a949b2ba/" class=" me-4 text-reset">
-              <i class="fab fa-linkedin">Arion's LinkedIn</i>
+      <p class="h4  text-center ">Amazon Fire TV Stick</p><br>
+      <img src="images/Firestick.png" class="card-img-top" alt="An amazon firestick for streaming">
+      <div class="card-body">
+        <p class="card-text text-center">HD, sharp picture quality, fast streaming, free & live TV, Alexa Voice Remote
+          with TV controls.
+          <br>
+        <h5 class="text-center">$39.99</h5>
+        </p>
+      </div>
+       </div>
+    </div>
+    <div class="py-3 px-4">
+     <div class="card border-primary h-100">
+      <br><br>
+      <p class="h4 he text-center">Crocs</p><br>
+      <img src="images/Crocs.png" class="card-img-top" alt="Black Crocs">
+      <br><br><br>
+      <div class="card-body">
+        <p class="card-text text-center">Unisex-Adult Classic Clogs (Size 8 Mens).
+        <h5 class="text-center">$42.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+     <div class="card border-secondary h-100">
+      <br><br>
+      <p class="h4  text-center">FitBeast</p><br>
+
+      <img src="images/fiberbeat.png" class="card-img-top" alt="image of Grip Strengthener kit of 5">
+      <br><br><br>
+      <div class="card-body">
+        <p class="card-text text-center">Grip Strengthener Forearm Strengthener Hand Grips Strengthener Kit - 5 Pack
+          Adjustable Resistance.
+        <h5 class="text-center">$25.99</h5>
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="py-3 px-4">
+     <div class="card border-primary h-100">
+      <br><br>
+      <p class="h4  text-center">Play-Doh</p><br>
+      <img src="images/playdoh.png" class="card-img-top" alt="an image of a multicolored pyramid of playdoh containers">
+      <br><br>
+      <div class="card-body">
+        <p class="card-text text-center">Modeling Compound 10-Pack Case of Colors, Non-Toxic, Assorted, 2 oz. Cans,
+          Multicolor, Ages 2 and Up.
+        <h5 class="text-center">$7.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+     <div class="card border-secondary h-100">
+      <br><br>
+      <p class="h4  text-center">Sparkling Ice</p><br>
+      <img src="images/Sparkling_ice.png" class="card-img-top" alt="Sparkling ice Beverage black rasberry flavor">
+      <div class="card-body">
+        <p class="card-text text-center">Black Raspberry Sparkling Water, Zero Sugar Flavored Water, with Vitamins and
+          Antioxidants, Low Calorie Beverage,
+          17 fl oz Bottles (Pack of 12).
+        <h5 class="text-center">$10.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+     <div class="card border-primary h-100">
+      <br><br>
+      <p class="h4  text-center">BACKBONE</p>
+      <img src="images/Backbone.png" class="card-img-top" alt="The brand new playstation handheld console the BACKBONE">
+      <div class="card-body">
+        <p class="card-text text-center">One Mobile Gaming Controller for Android and iPhone 15 Series (USB-C) -
+          PlayStation Edition -
+          2nd Gen - Turn Your Phone into a Gaming Console- Play PlayStation, Xbox, Call of Duty & More.
+        <h5 class="text-center">$99.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+      <div class="card border-secondary h-100">
+      <br><br>
+      <p class="h4  text-center">JBL Charge 4</p><br>
+      <img src="images/Jbl_charge4.png" class="card-img-top" alt="The JBL Charge 4 speakers in a pink color">
+      <br><br><br><br>
+      <div class="card-body">
+        <p class="card-text text-center">JBL Charge 4 - Waterproof Portable Bluetooth Speaker - Pink.
+        <h5 class="text-center">$149.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+     <div class="card border-primary h-100">
+      <br><br>
+      <p class="h4  text-center">Wireless Charger iPhone Charging Station</p><br>
+      <img src="images/Multicharging_tool.png" class="card-img-top"
+        alt="A sleek black multi-charging tool to chage all apple devices simultaneously">
+      <br>
+      <div class="card-body">
+        <p class="card-text text-center">W 3 in 1 Charger Stand Multiple Devices for Apple - iPhone 15 14 Pro
+          Max 13 12 11 - Watch 9 8 7 6 5 4 3 2 Se - Airpods 3 2 Pro.
+        <h5 class="text-center">$29.99</h5>
+        </p>
+      </div>
+       </div>
+      </div>
+      <div class="py-3 px-4">
+      <div class="card border-secondary h-100">
+      <br><br>
+      <p class="h4  text-center">Blue Lock Manga Set</p><br>
+      <img src="images/Blue_lock_book_set.png" class="card-img-top"
+        alt="A book set of the first 5 books in the blue lock manga series paperback">
+      <br><br>
+      <div class="card-body">
+        <p class="card-text text-center">Volumes 1-5 Paperback.
+        <h5 class="text-center">$69.99</h5>
+        </p>
+      </div>
+      </div>
+      </div>  
+    </div>
+    </div>
+
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="me-4 text-reset">
+          <sv class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-4"></i>EchoTradez
+            </h6>
+            <a href="#!">
+              <img src="images/Logo Transparent.png" alt="EchoTradez" width="160" height="145">
             </a>
-            <a target="_blank" href="https://github.com/ajohn-2" class="mr-3 text-reset">
-              <i class="fab fa-github">&amp; Github</i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/santiago-cardenas-8381082a5/" class=" me-4 text-reset">
-              <i class="fab fa-linkedin">Santiago's LinkedIn</i>
-            </a>
-            <a target="_blank" href="https://github.com/lawandorder4" class="mr-3 text-reset">
-              <i class="fab fa-github">&amp; Github</i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/logan-vergara-55a7502b8/" class=" me-4 text-reset">
-              <i class="fab fa-linkedin">Logan's LinkedIn</i>
-            </a>
-            <a target="_blank" href="https://github.com/Rgjmerc" class="mr-3 text-reset">
-              <i class="fab fa-github">&amp; Github</i>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/jayden-baird-593781256/" class=" me-4 text-reset">
-              <i class="fab fa-linkedin">Jayden's LinkedIn</i>
-            </a>
-            <a target="_blank" href="https://github.com/JaydenBaird" class="mr-3 text-reset">
-              <i class="fab fa-github">&amp; Github</i>
-            </a>
-        </div>
-        </section>
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">           
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-4"></i>EchoTradez
-                </h6>
-                <a href="#!">
-                    <img src="images/Logo Transparent.png" alt="EchoTradez" width="160" height="145">
-                  </a>
-                <p class="font-weight-bold">              
-                </p>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">                
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Useful links
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset">Pricing</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Settings</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Orders</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">Help</a>
-                </p>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">                
-                <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
-                <p><i class="fas fa-home me-3"></i> New York, NY 11205, US</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  ajohn@brooklynsteamcenter.org
-                  lvergara@brooklynsteamcenter.org
-                  scardenas@brooklynsteamcenter.org
-                  jbaird@brooklynsteamcenter.org
-                </p>
-                <p><i class="fas fa-phone me-3"></i>+1 347-464-3680</p>
-              </div>
-            </div>
+            <p class="font-weight-bold">
+            </p>
           </div>
-        </section>
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2021 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div> 
-      </footer>      
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-        var wow = new WOW({
-            boxClass:     'wow',
-            animateClass: 'animate__animated'
-        })
-        wow.init();
-</script>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 11205, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              ajohn@brooklynsteamcenter.org
+              lvergara@brooklynsteamcenter.org
+              scardenas@brooklynsteamcenter.org
+              jbaird@brooklynsteamcenter.org
+            </p>
+            <p><i class="fas fa-phone me-3"></i>+1 347-464-3680</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animate__animated'
+    })
+    wow.init();
+  </script>
+  <script>
+function myFunction() {
+   var element = document.body;
+ 
+   element.classList.toggle("dark-mode");
+}
+    </script>
 </body>
+
 </html>
